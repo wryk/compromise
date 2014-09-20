@@ -1,0 +1,23 @@
+{
+  "name": "compromise",
+  "version": "0.0.1",
+  "repository": "wryk/compromise",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ],
+  "dependencies": {
+    "wryk/is-generator": "^1.0.0",
+    "wryk/is-generator-function": "^1.0.0"
+  },
+  "development": {
+    "dependencies": {
+      "visionmedia/mocha": "^1.21.4",
+      "chaijs/chai": "^1.9.1"
+    },
+    "scripts": [
+      "test/index.js"
+    ]
+  }
+}
