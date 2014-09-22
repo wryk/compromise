@@ -69,12 +69,12 @@ describe('compromise(fn)()', function () {
 	})
 })
 
-describe('yielding promise', function () {
+describe('yielding promises', function () {
 	it('should return a promise value on resolution', function (done) {
-		compromise(function* () {
-			var value = {}
-			var promise = Promise.resolve(value)
+		var value = {}
+		var promise = Promise.resolve(value)
 
+		compromise(function* () {
 			var result = yield promise
 			result.should.be.equal(value)
 		})().then(done)
@@ -94,7 +94,7 @@ describe('yielding promise', function () {
 	})
 })
 
-describe('yielding generator', function () {
+describe('delegation (yielding generators)', function () {
 	it('should return the value returned by the yielded generator', function (done) {
 		var value = {}
 		var promise = Promise.resolve(value)
@@ -136,7 +136,7 @@ describe('yielding generator', function () {
 	})
 })
 
-describe('yielding others values', function () {
+describe('normalization (yielding others values)', function () {
 	it('could yield any other value', function (done) {
 		compromise(function* () {
 			function Something () {}
