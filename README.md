@@ -1,17 +1,16 @@
 # compromise
-asynchrone flow control with generators and promises
+  asynchrone flow control with generators and promises
 
 ## Usage
 ```javascript
-import compromise from 'compromise'
-
 compromise(function* () {
-
+	var mummy = yield loadImage('https://octodex.github.com/mummytocat/')
+	var female = yield loadImage('https://octodex.github.com/femalecodertocat/')
 })()
 ```
 
 ## API
-compromise(fn)
+  * compromise(fn)
 
 ## Running tests
 ```batch

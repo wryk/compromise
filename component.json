@@ -1,23 +1,24 @@
 {
-  "name": "compromise",
-  "version": "0.0.1",
-  "repository": "wryk/compromise",
-  "license": "MIT",
-  "main": "index.js",
-  "scripts": [
-    "index.js"
-  ],
-  "dependencies": {
-    "wryk/is-generator": "^1.0.0",
-    "wryk/is-generator-function": "^1.0.0"
-  },
-  "development": {
+    "name": "compromise",
+    "version": "0.0.1",
+
+    "repository": "wryk/compromise",
+    "description": "generator and promise based control flow",
+    "keywords": ["generator", "promise", "control", "flow"],
+    "license": "MIT",
+
+    "main": "index.js",
+    "scripts": ["index.js"],
     "dependencies": {
-      "visionmedia/mocha": "^1.21.4",
-      "chaijs/chai": "^1.9.1"
+        "prelusion/is-generator": "^0.0.0",
+        "prelusion/is-generator-function": "^0.0.0"
     },
-    "scripts": [
-      "test/index.js"
-    ]
-  }
+
+    "development": {
+        "scripts": ["test/index.js"],
+        "dependencies": {
+            "visionmedia/mocha": "^1.21.4",
+            "chaijs/chai": "^1.9.1"
+        }
+    }
 }
