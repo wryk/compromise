@@ -1,6 +1,6 @@
 {
     "name": "compromise",
-    "version": "0.0.1",
+    "version": "0.0.2",
 
     "repository": "wryk/compromise",
     "description": "generator and promise based control flow",
