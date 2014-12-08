@@ -33,11 +33,18 @@ function run (generator) {
 				})
 				.then(function (result) {
 					if (result.done) return resolve(result.value)
-					var promise = (isGenerator(result.value) ? run : Promise.resolve)(result.value)
-					next(promise)
+					next(toPromise(result.value))
 				}, function (reason) {
 					reject(reason)
 				})
 		}
 	})
+}
+
+/**
+ * @param {*} value
+ * @return {Promise}
+**/
+function toPromise (value) {
+	return (isGenerator(value) ? run : Promise.resolve)(value)
 }
