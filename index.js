@@ -1,7 +1,7 @@
-import isGenerator from 'is-generator'
-import isGeneratorFunction from 'is-generator-function'
+var isGenerator = require('is-generator')
+var isGeneratorFunction = require('is-generator-function')
 
-export default compromise
+module.exports = compromise
 
 /**
  * @param {GeneratorFunction} fn
