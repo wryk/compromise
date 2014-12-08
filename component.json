@@ -17,7 +17,7 @@
     "development": {
         "scripts": ["test/index.js"],
         "dependencies": {
-            "visionmedia/mocha": "^1.21.4",
+            "mochajs/mocha": "^1.21.4",
             "chaijs/chai": "^1.9.1"
         }
     }
